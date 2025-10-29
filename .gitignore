@@ -39,6 +39,7 @@ Desktop.ini
 **/pom.xml.versionsBackup
 **/release.properties
 **/.mvn/timing.properties
+**/**/.mvn
 **/.mvn/wrapper/maven-wrapper.jar
 
 # IntelliJ
