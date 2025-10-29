@@ -1,0 +1,119 @@
+# ======================================
+# 🔹 GLOBAL SETTINGS
+# ======================================
+# Logs
+logs/
+*.log
+*.log.*
+*.out
+*.pid
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
+# IDE files
+.vscode/
+.idea/
+*.iml
+
+# OS junk
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# ======================================
+# 🔹 JAVA / SPRING BOOT (Backend)
+# ======================================
+# Maven
+**/target/
+**/pom.xml.tag
+**/pom.xml.releaseBackup
+**/pom.xml.versionsBackup
+**/release.properties
+**/.mvn/timing.properties
+**/.mvn/wrapper/maven-wrapper.jar
+
+# IntelliJ
+**/.idea/
+**/*.iml
+
+# Logs & reports
+**/logs/
+**/*.log
+**/build/
+**/out/
+
+# Spring Boot specific
+**/application-local.yml
+**/application-dev.yml
+**/application-prod.yml
+
+# ======================================
+# 🔹 ANGULAR FRONTEND
+# ======================================
+# Dependencies
+frontend/angular-portfolio/node_modules/
+frontend/angular-portfolio/.angular/
+frontend/angular-portfolio/.cache/
+
+# Build output
+frontend/angular-portfolio/dist/
+frontend/angular-portfolio/out-tsc/
+
+# Testing
+frontend/angular-portfolio/coverage/
+frontend/angular-portfolio/karma.conf.js
+frontend/angular-portfolio/junit.xml
+
+# Environment configs
+frontend/angular-portfolio/src/environments/environment.ts
+frontend/angular-portfolio/src/environments/environment.prod.ts
+
+# ======================================
+# 🔹 DOCKER & INFRASTRUCTURE
+# ======================================
+infra/mongo_data/
+infra/scripts/init-mongo.sh
+**/docker-compose.override.yml
+
+# Build cache
+**/.docker/
+**/build/
+**/.cache/
+**/node_modules/
+**/target/
+
+# Local volumes or database
+mongo_data/
+*.db
+*.sqlite
+
+# ======================================
+# 🔹 GIT & CI/CD
+# ======================================
+# GitHub Actions runner logs
+.github/workflows/*.log
+
+# GitHub metadata
+*.lock
+*.bak
+*.swp
+*.orig
+
+# ======================================
+# 🔹 SECURITY / SECRETS
+# ======================================
+**/secrets/
+**/private_keys/
+**/config/keys/
+**/credentials.json
+**/client_secret.json
+**/serviceAccountKey.json
