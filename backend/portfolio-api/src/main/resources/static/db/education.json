@@ -1,0 +1,17 @@
+{
+  "university": "Benha University",
+  "degree": "Bachelor",
+  "faculty": "Computers and Artificial Intelligence, Computer Science",
+  "description": "Focused on core computer science principles, artificial intelligence, and the software development life cycle (SDLC). Played an active role in the developer community by providing technical support.",
+  "image": "benha-university-logo.jpg",
+
+  "skills": [
+    "Software Development Life Cycle (SDLC)",
+    "Artificial Intelligence (AI)",
+    "Cross-Cultural Communication Skills"
+  ],
+  "duration": {
+    "start": "2019",
+    "end": "2023"
+  }
+}

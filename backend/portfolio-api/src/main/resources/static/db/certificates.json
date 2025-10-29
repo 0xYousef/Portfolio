@@ -1,0 +1,74 @@
+[
+  {
+    "title": "Data Structures & Backend with Java",
+    "company": "Board Infinity",
+    "description": "Advanced training in Java backend development and essential data structures.",
+    "image": "board-infinity-logo.png",
+    "issued": "Jan 2025",
+    "link": "https://www.coursera.org/account/accomplishments/certificate/JH9VA6XYCEBO"
+  },
+  {
+    "title": "English for Career Development",
+    "company": "University of Pennsylvania",
+    "description": "Professional communication and career advancement skills.",
+    "image": "univ-pennsylvania-logo.png",
+    "issued": "Jan 2025",
+    "link": "https://www.coursera.org/account/accomplishments/certificate/WRIAVJOH6LBA"
+  },
+  {
+    "title": "ISTQB® Foundation Level",
+    "company": "Orange Digital Center Egypt",
+    "description": "Certified in international software testing standards and QA methodologies.",
+    "image": "orange.png",
+    "issued": "Nov 2022",
+    "link": "https://drive.google.com/file/d/1i5y96FLqfo00Uhcqc0DcxjcwtslKVtrW/view?usp=sharing"
+  },
+  {
+    "title": "Introduction to Cybersecurity Bootcamp",
+    "company": "Trend Micro | CyberTalents",
+    "description": "Completed intensive bootcamp on fundamental cybersecurity principles and practices.",
+    "image": "trend-micro-logo.png",
+    "issued": "Jul 2022",
+    "link": "https://drive.google.com/file/d/1joPaIyPq2GuQ2UyLJXl3yQU3tP1byNdm/view?usp=sharing"
+  },
+  {
+    "title": "NDG Linux Essentials",
+    "company": "Cisco Networking Academy",
+    "description": "Certified in fundamental Linux command line and operating system concepts.",
+    "image": "cisco-logo.png",
+    "issued": "Mar 2022",
+    "link": "https://drive.google.com/file/d/1XNkwLTdFjfiobh8v_5Nwz1924dW-pSR0/view?usp=sharing"
+  },
+  {
+    "title": "Red Hat Certified System Administrator (RHCSA)",
+    "company": "Information Technology Institute (ITI)",
+    "description": "Certified in essential Linux system administration skills and Red Hat Enterprise Linux.",
+    "image": "iti-logo.png",
+    "issued": "Feb 2022",
+    "link": "https://drive.google.com/file/d/1GjTd8-AxIf1Rvw7Dj7u1KE2h6-VjMTvT/view"
+  },
+  {
+    "title": "Python Data Structures",
+    "company": "University of Michigan | Coursera",
+    "description": "Mastered data structure implementation and manipulation using Python.",
+    "image": "univ-michigan-logo.png",
+    "issued": "Aug 2021",
+    "link": "https://www.coursera.org/account/accomplishments/certificate/JZCCHXX8GSUV"
+  },
+  {
+    "title": "Programming for Everybody (Getting Started with Python)",
+    "company": "University of Michigan | Coursera",
+    "description": "Foundational programming course covering Python basics and core concepts.",
+    "image": "univ-michigan-logo.png",
+    "issued": "Jul 2021",
+    "link": "https://www.coursera.org/account/accomplishments/certificate/BK6ZH9ZAA4MY"
+  },
+  {
+    "title": "Using Python to Interact with the Operating System",
+    "company": "Coursera",
+    "description": "Learned to automate OS tasks and manage systems using Python scripting.",
+    "image": "coursera-logo.png",
+    "issued": "Jun 2021",
+    "link": "https://www.coursera.org/account/accomplishments/certificate/NSSSUT7WDEM6"
+  }
+]
