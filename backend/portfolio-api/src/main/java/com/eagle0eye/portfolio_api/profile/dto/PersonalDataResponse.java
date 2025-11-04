@@ -8,6 +8,6 @@ import lombok.Setter;
 @Getter
 @Setter
 public class PersonalDataResponse {
-    private ImageResponse image;
+    private ReadAsset image;
     private String account;
 }

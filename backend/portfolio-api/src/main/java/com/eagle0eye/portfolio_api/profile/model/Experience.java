@@ -1,6 +1,5 @@
 package com.eagle0eye.portfolio_api.profile.model;
 
-import com.eagle0eye.portfolio_api.profile.dto.ImageResponse;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.Setter;
@@ -20,9 +19,9 @@ public class Experience {
     private String description;
     private Company company;
     private Duration duration;
-    private ImageResponse image;
+    private String image;
     private String field;
     private String location;
     private String locationType;
-    private String employeeType;
+    private String employmentType;
 }

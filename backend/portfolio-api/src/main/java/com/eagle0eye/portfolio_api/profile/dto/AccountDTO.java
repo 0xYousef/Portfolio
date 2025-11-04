@@ -9,5 +9,5 @@ import lombok.Setter;
 @Builder
 public class AccountDTO {
     private String account;
-    private ImageResponse imageResponse;
+    private ReadAsset readAsset;
 }

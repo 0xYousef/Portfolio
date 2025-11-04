@@ -14,9 +14,9 @@ public class ExperienceDTO {
     private String description;
     private Company company;
     private Duration duration;
-    private ImageResponse image;
+    private ReadAsset image;
     private String field;
     private String location;
     private String locationType;
-    private String employeeType;
+    private String employmentType;
 }

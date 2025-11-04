@@ -5,7 +5,7 @@ import lombok.Getter;
 import lombok.Setter;
 
 @Builder @Getter @Setter
-public class ImageResponse {
+public class ReadAsset {
     private String title;
-    private String path;
+    private String link;
 }

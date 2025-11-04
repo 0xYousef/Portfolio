@@ -12,7 +12,7 @@ public class UserInfoDTO {
     private String email;
     private String phone;
     private String address;
-    private ImageResponse image;
+    private ReadAsset image;
     private String cv;
     private String job;
 
