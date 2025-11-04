@@ -10,4 +10,5 @@ public class MetricsApiApplication {
 		SpringApplication.run(MetricsApiApplication.class, args);
 	}
 
+
 }

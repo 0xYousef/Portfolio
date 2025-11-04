@@ -1,0 +1,11 @@
+
+spring:
+  application:
+    name: metrics-api
+
+  data:
+    mongodb:
+      uri: mongodb+srv://${MONGO_USER}:${MONGO_PASS}@${CLUSTER}/${MONGO_DB}
+
+server:
+  port: 8081

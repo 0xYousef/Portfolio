@@ -1,0 +1,10 @@
+version: "3.8"
+
+services:
+  metrics-api:
+    build: .
+    image: eagle0eye/metrics-api:latest
+    env_file: .env
+    ports:
+      - "8081:8081"
+    restart: always
