@@ -2,7 +2,6 @@ package com.eagle0eye.portfolio_api.profile.service;
 
 import com.eagle0eye.portfolio_api.profile.dto.ExperienceDTO;
 import com.eagle0eye.portfolio_api.profile.dto.ReadAsset;
-import com.eagle0eye.portfolio_api.profile.model.Experience;
 import com.eagle0eye.portfolio_api.profile.repository.ExperienceRepository;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
