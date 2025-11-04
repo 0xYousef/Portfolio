@@ -1,8 +1,6 @@
 package com.eagle0eye.portfolio_api.posts.mapper;
 
-import com.eagle0eye.portfolio_api.posts.dto.PostDTO;
 import com.eagle0eye.portfolio_api.posts.dto.PostMetaDTO;
-import com.eagle0eye.portfolio_api.posts.model.Post;
 import com.eagle0eye.portfolio_api.posts.model.PostMeta;
 
 public class PostsMapper {

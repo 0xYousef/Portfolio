@@ -3,12 +3,10 @@ package com.eagle0eye.metrics_api.assets.controller;
 import com.eagle0eye.metrics_api.assets.dto.ReadAsset;
 import com.eagle0eye.metrics_api.assets.service.AssetServiceImpl;
 import lombok.RequiredArgsConstructor;
-import org.springframework.http.MediaType;
+
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import java.io.InputStream;
-import java.net.URL;
 import java.util.List;
 
 @RestController
