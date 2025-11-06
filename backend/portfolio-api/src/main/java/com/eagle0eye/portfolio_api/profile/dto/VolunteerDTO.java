@@ -4,8 +4,7 @@ import lombok.Builder;
 import lombok.Getter;
 import lombok.Setter;
 
-@Builder @Getter @Setter
-public class ReadAsset {
-    private String title;
-    private String link;
+@Getter @Setter @Builder
+public class VolunteerDTO {
+
 }

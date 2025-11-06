@@ -3,7 +3,7 @@ package com.eagle0eye.metrics_api.assets.service;
 import com.eagle0eye.metrics_api.assets.dto.ReadAsset;
 import com.eagle0eye.metrics_api.assets.model.Asset;
 import com.eagle0eye.metrics_api.assets.repository.AssetsRepository;
-import com.eagle0eye.metrics_api.mapper.AssetMapper;
+import com.eagle0eye.metrics_api.assets.mapper.AssetMapper;
 import lombok.RequiredArgsConstructor;
 import org.springframework.core.io.FileSystemResource;
 import org.springframework.core.io.Resource;

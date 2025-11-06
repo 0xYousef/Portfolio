@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+option java_multiple_files = true;
+option java_package = "com.eagle0eye.portfolio_api.assets.grpc";
+option java_outer_classname = "AssetsProto";
+
+service AssetService {
+  rpc GetAssetById (AssetRequest) returns (AssetResponse);
+  rpc GetAssetsByIds (AssetIdsRequest) returns (stream AssetResponse);
+}
+
+message AssetRequest {
+  string id = 1;
+}
+
+message AssetIdsRequest {
+  repeated string ids = 1;
+}
+
+message AssetResponse {
+  string title = 1;
+  string link = 2;
+}

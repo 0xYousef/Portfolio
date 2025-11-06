@@ -1,6 +1,7 @@
 package com.eagle0eye.portfolio_api.profile.model;
 
 import lombok.Getter;
+import java.util.Arrays;
 
 @Getter
 public enum SocialType {
@@ -22,5 +23,13 @@ public enum SocialType {
 
     public String buildFullLink(String handle) {
         return baseUrl + handle;
+    }
+
+    public static SocialType findPlatform(String name) {
+        if (name == null) return null;
+        return Arrays.stream(values())
+                .filter(s -> s.assetName.equalsIgnoreCase(name))
+                .findFirst()
+                .orElse(null);
     }
 }

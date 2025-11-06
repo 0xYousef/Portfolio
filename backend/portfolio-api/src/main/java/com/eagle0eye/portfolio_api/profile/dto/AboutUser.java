@@ -15,21 +15,11 @@ import java.util.List;
 @Getter
 public class AboutUser {
 
-    private Education education;
+    private EducationDTO education;
 
-    @Builder.Default
-    private List<Experience> experiences = new ArrayList<>();
-
-    @Builder.Default
-    private List<Skill> skills = new ArrayList<>();
-
-    @Builder.Default
-    private List<Certificate> certificates = new ArrayList<>();
-
-    @Builder.Default
-    private List<Account> accounts = new ArrayList<>();
-
-    @Builder.Default
-    private List<Volunteer> volunteers = new ArrayList<>();
+    @Builder.Default private List<ExperienceDTO> experiences = new ArrayList<>();
+    @Builder.Default private List<SkillDTO> skills = new ArrayList<>();
+    @Builder.Default private List<CertificationDTO> certificates = new ArrayList<>();
+    @Builder.Default private List<VolunteerDTO> volunteers = new ArrayList<>();
 
 }

@@ -1,6 +1,9 @@
 package com.eagle0eye.portfolio_api.profile.controller;
 
-import com.eagle0eye.portfolio_api.profile.dto.ExperienceDTO;
+import com.eagle0eye.portfolio_api.profile.dto.AboutUser;
+import com.eagle0eye.portfolio_api.profile.dto.AccountDTO;
+
+import com.eagle0eye.portfolio_api.profile.dto.UserInfoDTO;
 import com.eagle0eye.portfolio_api.profile.service.ProfileServiceImpl;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -14,8 +17,17 @@ import java.util.List;
 @RequiredArgsConstructor
 public class PortfolioController {
     private final ProfileServiceImpl profileService;
-    @GetMapping("/experiences")
-    public List<ExperienceDTO> viewExperiences() {
-        return profileService.getExperiences();
+    @GetMapping("/about-me")
+    public AboutUser viewAboutMe() {
+        return profileService.getAboutUser();
+    }
+    @GetMapping("/accounts")
+    public List<AccountDTO> viewAccounts() {
+        return profileService.getAccounts();
+    }
+
+    @GetMapping("/user-info")
+    public UserInfoDTO viewUserInfo() {
+        return profileService.getUserInfo();
     }
 }

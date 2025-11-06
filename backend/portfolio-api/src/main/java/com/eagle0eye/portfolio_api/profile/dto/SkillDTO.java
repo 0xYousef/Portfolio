@@ -5,10 +5,9 @@ import lombok.Builder;
 import lombok.Getter;
 import lombok.Setter;
 
-@Setter
-@Getter
-@Builder
-public class AccountDTO {
-    private String account;
-    private ReadAsset readAsset;
+@Getter @Setter @Builder
+public class SkillDTO {
+    private String title;
+    private ReadAsset icon;
+    private int progress;
 }

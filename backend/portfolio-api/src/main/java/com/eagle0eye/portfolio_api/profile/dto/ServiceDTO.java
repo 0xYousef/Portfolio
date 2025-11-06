@@ -5,10 +5,9 @@ import lombok.Builder;
 import lombok.Getter;
 import lombok.Setter;
 
-@Setter
-@Getter
-@Builder
-public class AccountDTO {
-    private String account;
-    private ReadAsset readAsset;
+@Builder @Setter @Getter
+public class ServiceDTO {
+    private String name;
+    private String description;
+    private ReadAsset image;
 }
