@@ -1,6 +1,5 @@
 package com.eagle0eye.portfolio_api.profile.model;
 
-import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.Setter;

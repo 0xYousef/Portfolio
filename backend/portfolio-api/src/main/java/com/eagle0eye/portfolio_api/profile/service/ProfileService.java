@@ -8,7 +8,6 @@ import java.util.List;
 public interface ProfileService {
     List<ServiceDTO> getServices();
     UserInfoDTO getUserInfo();
-    List<ExperienceDTO> getExperiences();
     AboutUser getAboutUser();
     List<AccountDTO> getAccounts();
 }

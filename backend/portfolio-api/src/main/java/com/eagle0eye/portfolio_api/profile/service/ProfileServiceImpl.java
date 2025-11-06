@@ -3,7 +3,6 @@ package com.eagle0eye.portfolio_api.profile.service;
 import com.eagle0eye.portfolio_api.profile.dto.*;
 import com.eagle0eye.portfolio_api.profile.model.Company;
 import com.eagle0eye.portfolio_api.profile.model.Duration;
-import com.eagle0eye.portfolio_api.profile.model.Education;
 import com.eagle0eye.portfolio_api.profile.model.SocialType;
 import com.eagle0eye.portfolio_api.profile.repository.*;
 import com.eagle0eye.portfolio_api.shared.assets.ReadAsset;
@@ -11,8 +10,6 @@ import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
-import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
 
