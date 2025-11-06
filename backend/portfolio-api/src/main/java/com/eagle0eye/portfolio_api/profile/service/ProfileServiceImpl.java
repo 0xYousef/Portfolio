@@ -1,8 +1,6 @@
 package com.eagle0eye.portfolio_api.profile.service;
 
 import com.eagle0eye.portfolio_api.profile.dto.*;
-import com.eagle0eye.portfolio_api.profile.model.Company;
-import com.eagle0eye.portfolio_api.profile.model.Duration;
 import com.eagle0eye.portfolio_api.profile.model.SocialType;
 import com.eagle0eye.portfolio_api.profile.repository.*;
 import com.eagle0eye.portfolio_api.shared.assets.ReadAsset;

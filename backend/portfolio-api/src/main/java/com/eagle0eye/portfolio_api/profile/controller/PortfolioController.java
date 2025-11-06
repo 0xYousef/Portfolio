@@ -3,6 +3,7 @@ package com.eagle0eye.portfolio_api.profile.controller;
 import com.eagle0eye.portfolio_api.profile.dto.AboutUser;
 import com.eagle0eye.portfolio_api.profile.dto.AccountDTO;
 
+import com.eagle0eye.portfolio_api.profile.dto.ServiceDTO;
 import com.eagle0eye.portfolio_api.profile.dto.UserInfoDTO;
 import com.eagle0eye.portfolio_api.profile.service.ProfileServiceImpl;
 import lombok.RequiredArgsConstructor;
@@ -17,6 +18,12 @@ import java.util.List;
 @RequiredArgsConstructor
 public class PortfolioController {
     private final ProfileServiceImpl profileService;
+
+    @GetMapping("/services")
+    public List<ServiceDTO> getServices() {
+        return profileService.getServices();
+    }
+
     @GetMapping("/about-me")
     public AboutUser viewAboutMe() {
         return profileService.getAboutUser();
