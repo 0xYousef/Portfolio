@@ -9,6 +9,10 @@ import lombok.Setter;
 @Getter
 @Setter
 public class CertificationDTO {
+    private String title;
+    private String company;
+    private String description;
     private ReadAsset image;
-    private String account;
+    private String issued;
+    private String link;
 }

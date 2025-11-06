@@ -59,60 +59,14 @@ public class ProfileServiceImpl implements ProfileService {
                 .orElseGet(() -> UserInfoDTO.builder().build());
     }
 
-
-    @Override
-    public List<ExperienceDTO> getExperiences() {
-        return experienceRepository.findAll()
-                .stream()
-                .map(exp -> {
-//                    ReadAsset image =  assetService.getAsset(exp.getImage());
-
-                    return ExperienceDTO.builder()
-                            .title(exp.getTitle())
-                            .description(exp.getDescription())
-                            .image(ReadAsset.builder().build())
-                            .build();
-                })
-                .toList();
-    }
-
     @Override
     public AboutUser getAboutUser() {
-        EducationDTO educationDTO = educationRepository.findAll()
-                .stream()
-                .findFirst()
-                .map((education -> {
-                    return EducationDTO.builder()
-                            .university(education.getUniversity())
-                            .skills(education.getSkills())
-                            .degree(education.getDegree())
-                            .duration(Duration.builder().build())
-                            .faculty(education.getFaculty())
-                            .image(ReadAsset.builder().build())
-                            .build();
-                }))
-                .orElse(EducationDTO.builder().build());
-
-        List<ExperienceDTO> experiences = experienceRepository.findAll()
-                .stream()
-                .map((experience -> {
-                    return ExperienceDTO.builder()
-                            .title(experience.getTitle())
-                            .description(experience.getDescription())
-                            .field(experience.getField())
-                            .company(Company.builder().build())
-                            .image(ReadAsset.builder().build())
-                            .duration(Duration.builder().build())
-                            .location(experience.getLocation())
-                            .locationType(experience.getLocationType())
-                            .employmentType(experience.getEmploymentType())
-                            .build();
-                        }))
-                .toList();
-
-
         return AboutUser.builder()
-                .education(educationDTO)
+                .education(getEducation())
+                .experiences(getExperiences())
+                .certificates(getCertifications())
+                .skills(getSkills())
+                .volunteers(getVolunteers())
                 .build();
     }
 
@@ -134,5 +88,82 @@ public class ProfileServiceImpl implements ProfileService {
                 .collect(Collectors.toList());
     }
 
+    private EducationDTO getEducation() {
+        return educationRepository.findAll()
+                .stream()
+                .findFirst()
+                .map((education -> {
+                    return EducationDTO.builder()
+                            .university(education.getUniversity())
+                            .skills(education.getSkills())
+                            .degree(education.getDegree())
+                            .duration(education.getDuration())
+                            .faculty(education.getFaculty())
+                            .image(ReadAsset.builder().build())
+                            .build();
+                }))
+                .orElse(EducationDTO.builder().build());
+    }
+
+    private List<ExperienceDTO> getExperiences() {
+        return experienceRepository.findAll()
+                .stream()
+                .map((experience -> {
+                    return ExperienceDTO.builder()
+                            .title(experience.getTitle())
+                            .description(experience.getDescription())
+                            .field(experience.getField())
+                            .company(experience.getCompany())
+                            .image(ReadAsset.builder().build())
+                            .duration(experience.getDuration())
+                            .location(experience.getLocation())
+                            .locationType(experience.getLocationType())
+                            .employmentType(experience.getEmploymentType())
+                            .build();
+                }))
+                .toList();
+    }
+
+    private List<SkillDTO> getSkills() {
+        return skillRepository.findAll()
+                .stream()
+                .map((skill -> {
+                    return SkillDTO.builder()
+                            .title(skill.getTitle())
+                            .icon(ReadAsset.builder().build())
+                            .progress(skill.getProgress())
+                            .build();
+                })).toList();
+    }
+
+    private List<CertificationDTO> getCertifications(){
+        return certificateRepository.findAll()
+                .stream()
+                .map((certificate)->{
+                    return CertificationDTO.builder()
+                            .title(certificate.getTitle())
+                            .company(certificate.getCompany())
+                            .description(certificate.getDescription())
+                            .issued(certificate.getIssued())
+                            .image(ReadAsset.builder().build())
+                            .link(certificate.getLink())
+                            .build();
+                }).toList();
+    }
+
+    private List<VolunteerDTO> getVolunteers(){
+        return volunteerRepository.findAll()
+                .stream()
+                .map(volunteer -> {
+                    return VolunteerDTO.builder()
+                            .title(volunteer.getTitle())
+                            .company(volunteer.getCompany())
+                            .duration(volunteer.getDuration())
+                            .description(volunteer.getDescription())
+                            .skills(volunteer.getSkills())
+                            .image(ReadAsset.builder().build())
+                            .build();
+                }).toList();
+    }
 
 }
